@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="Login1Servlet">
+    用户名:<input type="text" name="username"><br>
+    验证码:<input type="text" name="check"><img onclick="checkImg(this)" src="/study/studing"><br>
+      <input type="submit" value="提交"><br>
+</form>
+<script type="text/javascript">
+	function checkImg(obj){
+		obj.src = "/study/studing?time="+new Date().getTime();
+	}
+</script>
+</body>
+</html>
